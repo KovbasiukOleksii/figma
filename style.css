@@ -374,6 +374,11 @@ td {
     font-size: 14px;
     text-align: left;
 }
+@media only screen and (max-width: 414px) {
+    td {
+        font-size: 10px;
+    }
+}
 td p {
     margin: 0;
 }
@@ -400,6 +405,14 @@ table a {
 .excursion_card img{
     width: 100%;
 }
+.excursion_card a {
+    text-decoration: none;
+    color: #000;
+}
+.excursion_card a:hover {
+    transition: 0.5s;
+    color: #CB0000;
+}
 @media only screen and (max-width: 1250px) {
     .excursion_card {
         width:  400px;
@@ -422,7 +435,7 @@ table a {
 }
 @media only screen and (max-width: 375px) {
     .excursion_card {
-        width:  180px;
+        width:  170px;
     }
 }
 .excursion_card h2 {
@@ -435,6 +448,11 @@ table a {
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 414px) {
+    .excursion_card h2 {
+        font-size: 14px;
+    }
+}
 .excursion_card h2:nth-child(1){
     float: left;
 }
@@ -445,11 +463,21 @@ table a {
     margin-top: 10px;
     font-size: 14px;
 }
+@media only screen and (max-width: 414px) {
+    .excursion_card p {
+        font-size: 10px;
+    }
+}
 .excursion_card-sale {
     position: relative;
     float: right;
     top: -40px;
     text-decoration: line-through;
+}
+@media only screen and (max-width: 414px) {
+    .excursion_card-sale {
+        top: -30px;
+    }
 }
 .info_text {
     display: inline-block;
